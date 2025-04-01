@@ -13,11 +13,7 @@ use anyhow::{Context, Result};
 use std::str::FromStr;
 use tracing::{error, info};
 
-pub mod types;
-
 use crate::Frontrunner::ParticipantData;
-use analyzer::ArbitrageAnalyzer;
-use types::{ArbitrageOpportunity, TransactionAnalysis};
 
 pub type EvmProvider = FillProvider<
     JoinFill<
