@@ -114,7 +114,7 @@ impl FrontrunnerBot {
         let tx_string = hex::encode(_tx.tx_hash().0);
         let tx_clone = _tx.clone();
         info!("pending tx is {}", tx_string);
-        let mut pending = provider.send_tx_envelope(tx_clone).await?.watch();
+        let mut pending = provider.send_tx_envelope(tx_clone).await?;
         // pending.set_required_confirmations(1);
         match pending.get_receipt().await {
             Ok(re) => {
