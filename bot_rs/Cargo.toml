@@ -1,0 +1,25 @@
+[package]
+name = "frontrunner-bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+alloy = { version = "0.11.1", features = ["full"] }
+tokio = { version = "1.0", features = ["full"] }
+alloy-signer = "0.11.1"
+alloy-signer-local = "0.11.1"
+alloy-transport-http = "0.11.1"
+alloy-provider = "0.11.1"
+thiserror = "2.0.12"
+# log = "0.4"
+reqwest = { version = "0.11", features = ["json"] }
+dotenv = "0.15"
+anyhow = "1.0.97"
+futures = "0.3.31"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter", "chrono"] }
+tracing = "0.1.41"
+hex = "0.4.3"
+
+[dev-dependencies]
+mockito = "1.2"
+tokio-test = "0.4"
