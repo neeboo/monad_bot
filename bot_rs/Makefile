@@ -6,8 +6,5 @@ run:
 test:
 	cargo test
 
-bench:
-	cargo bench
-
 contract-bindings:
-	alloy bind --abi ./contracts/frontrunner.abi.json --out-dir ./src/contracts
+	alloy bind --abi ../bot_go/contracts/frontrunner.abi.json --out-dir ./src/contracts
