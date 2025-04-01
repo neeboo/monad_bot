@@ -13,7 +13,6 @@ use anyhow::{Context, Result};
 use std::str::FromStr;
 use tracing::{error, info};
 
-pub mod analyzer;
 pub mod types;
 
 use crate::Frontrunner::ParticipantData;
